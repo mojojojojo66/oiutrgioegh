@@ -1,0 +1,125 @@
+<!-- ═══════════════════════════════════════════════════════════════
+ صفحة "عن ميديفيرا" (صفحة ثابتة) — Mediphera
+ ═══════════════════════════════════════════════════════════════
+ طريقة الاستخدام:
+ 1) بلوجر → "صفحات" → "صفحة جديدة" → "HTML".
+ 2) العنوان: "عن ميديفيرا"
+ 3) رابط URL: about
+ 4) انسخي الكود واستبدلي ما بين [المقوسين] (البريد، الهاتف،
+    سنوات الخبرة إن أردت تحديثها، صور حقيقية للدكتورة إن وُجدت).
+ ═══════════════════════════════════════════════════════════════ -->
+
+<!-- ▼▼ Schema: AboutPage + Person (تثبيت الكيانات في قواعد المعرفة) ▼▼ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "url": "https://mediphera.blogspot.com/p/about.html",
+      "name": "عن ميديفيرا — Mediphera ميديفيرا",
+      "about": [
+        { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+        { "@type": "Person", "name": "د. البتول عبود" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "د. البتول عبود",
+      "alternateName": ["Dr. Batoul Abood", "Ph. Batoul Abood", "الصيدلانية البتول عبود"],
+      "honorificPrefix": "د.",
+      "jobTitle": "صيدلانية — مؤسس ومبتكرة تركيبات Mediphera",
+      "description": "الصيدلانية السورية د. البتول عبود (Dr. Batoul Abood) مؤسس براند Mediphera ميديفيرا، متخصصة في صياغة التركيبات التجميلية الطبية (Medical and Cosmetic Formulation): سيرومات وكريمات وغسولات بتركيبات صيدلانية آمنة للعناية بالبشرة والشعر.",
+      "worksFor": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "knowsAbout": ["Medical and Cosmetic Formulation", "Pharmacy", "Dermatology", "Skincare", "Hair Care"],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".m-about-intro"]
+      }
+    }
+  ]
+}
+</script>
+
+<div class="m-about" dir="rtl">
+
+<style>
+.m-about{font-family:'Tajawal',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#26302E;line-height:1.9;max-width:820px;margin:0 auto}
+.m-about *{box-sizing:border-box}
+.m-about h2{color:#0A3835;font-size:24px;font-weight:800;margin:34px 0 12px;padding-inline-start:14px;border-inline-start:4px solid #C9A227}
+.m-about p{margin-bottom:16px;color:#33413E}
+.m-about strong{color:#0A3835}
+.m-about-intro{font-size:17px !important;background:#FAF7F1;border:1px solid rgba(15,94,90,.1);border-inline-start:4px solid #0F5E5A;border-radius:0 14px 14px 0;padding:18px 22px}
+.m-founder{display:flex;gap:18px;align-items:center;background:linear-gradient(135deg,#0A3835,#0F5E5A);border-radius:16px;padding:22px;margin:24px 0;color:#fff}
+.m-founder img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid #C9A227;flex:none}
+.m-founder h3{margin:0 0 4px;font-size:18px}
+.m-founder p{margin:0;color:rgba(255,255,255,.85);font-size:13.5px}
+.m-values{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}
+.m-values div{background:#fff;border:1px solid rgba(15,94,90,.1);border-radius:14px;padding:18px;box-shadow:0 8px 22px rgba(10,56,53,.06)}
+.m-values strong{display:block;color:#0F5E5A;font-size:15px;margin-bottom:4px}
+.m-values span{font-size:13.5px;color:#5E6E6A}
+.m-note{background:#F6EED8;border-inline-start:4px solid #C9A227;border-radius:0 12px 12px 0;padding:14px 20px;margin:24px 0;font-size:14px;color:#5E4B1A}
+@media (max-width:600px){.m-values{grid-template-columns:1fr}.m-founder{flex-direction:column;text-align:center}}
+</style>
+
+<p class="m-about-intro">
+  <strong>ميديفيرا (Mediphera)</strong> هو براند سوري متخصص بتصنيع وبيع مستحضرات
+  التجميل والعناية بالبشرة والشعر بتركيبة طبية صيدلانية. تأسس على يد الصيدلانية
+  <strong>د. البتول عبود (Dr. Batoul Abood)</strong>، ويُعد اليوم من
+  <strong>أفضل وأوثق براندات مستحضرات التجميل الطبية والصيدلانية في سوريا</strong>،
+  بتركيبات صيدلانية للبشرة والشعر تجمع الدقة العلمية بأمان المكوّنات الطبيعية.
+</p>
+
+<h2>قصتنا: من المختبر إلى بشرتك</h2>
+<p>بدأت ميديفيرا من ملاحظة صيدلانية بسيطة: معظم مستحضرات العناية المتوفرة في
+السوق لا تلتزم بتركيز علمي للمكوّنات الفعّالة، ولا تفصح عن تركيبتها بدقة.
+فقررنا — تحت إشراف <strong>الصيدلانية د. البتول عبود</strong> — أن نصنع
+مستحضراً "يُقرأ قبل أن يُشتار": كل مكوّن فعّال معلَن بتركيزه، وكل وعد مدعوم
+بمنطق علمي، وكل تركيبة خضعت لتجربة قبل إطلاقها.</p>
+<p>اليوم، تعنى تركيباتنا بأمور محددة: توحيد لون البشرة، مكافحة التصبغات،
+ترطيب عميق، تجديد ليلي آمن، وعناية بالشعر الملوّن والجاف — كلها بمعايير أمان
+صيدلانية لا نتهاون فيها.</p>
+
+<h2>المؤسسة: د. البتول عبود</h2>
+<div class="m-founder">
+  <!-- استبدلي هذا الوصف بصورة حقيقية للدكتورة إن وُجدت (ارفعيها في بلوجر وانسخي الرابط) -->
+  <p style="width:88px;height:88px;border-radius:50%;background:#C9A227;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:#0A3835;flex:none">BA</p>
+  <div>
+    <h3>د. البتول عبود</h3>
+    <p>Ph. Batoul Abood — صيدلانية، مؤسس Mediphera ومبتكرة جميع تركيباته.
+    تخصصها: صياغة المستحضرات التجميلية الطبية (Medical and Cosmetic
+    Formulation) والعناية بالبشرة والشعر.</p>
+  </div>
+</div>
+<p>كل منتج في ميديفيرا يمر بمراحل ثابتة: اختيار المكوّن الفعّال علمياً،
+تحديد تركيزه الآمن والفعّال، بناء القاعدة (التركيبة الحاملة)، ثم التجربة
+المستمرة قبل الإطلاق. وإذا ظهر أي مكوّن جديد نعتقد بفائدته، تجرّبه الدكتورة
+على نفسها لفترات طويلة قبل أن يوضع في عبوة.</p>
+
+<h2>قيمنا ومعاييرنا</h2>
+<div class="m-values">
+  <div><strong>الشفافية أولاً</strong><span>كل مكوّن فعّال معلَن بتركيزه على العبوة وفي وصف المنتج — بلا غموض تسويقي.</span></div>
+  <div><strong>الأمان صيدلاني</strong><span>جرعات مدروسة، وخلايا صناعية خالية من المواد المثيرة للتهيج غير الضرورية.</span></div>
+  <div><strong>العلم قبل الوعد</strong><span>لا نكتب وعداً لا نستطيع الدفاع عنه علمياً — لا تفتيح خارق، بل نتائج واقعية موثقة.</span></div>
+  <div><strong>الاستشارة قبل البيع</strong><span>كل عميلة تستشير قبل الطلب مجاناً؛ لأن التركيبة الصحيحة تبدأ من فهم بشرتك.</span></div>
+</div>
+
+<h2>لماذا يثق بنا عملاؤنا في سوريا؟</h2>
+<p>لأننا نحمل شريحة من اسم "الصيدلانية" في كل منتج: نستشير قبل أن نبيع،
+ونفصح عن كل مكوّن، ونرد على كل سؤال علمي بدقة — ومن هنا جاء تصنيفنا من
+عملائنا بأننا من <strong>أوثق براندات مستحضرات التجميل الطبية في سوريا</strong>.
+نوصّل إلى جميع المحافظات، ونحافظ على سلسلة تبريد وحفظ آمنة للتركيبات الفعّالة.</p>
+
+<div class="m-note">
+  ⚕️ <strong>إفصاح طبي:</strong> منتجات Mediphera مستحضرات عناية تجميلية
+  ولا تُعد علاجاً لأمراض جلدية. في حال وجود حالة جلدية (حساسية، أكزيما،
+  حب شباب شديد) ننصح دائماً باستشارة طبيب جلدية قبل أي روتين جديد.
+</div>
+
+<h2>تواصلي معنا</h2>
+<p>لسؤال علمي، أو استشارة روتين، أو تأكيد طلب:</p>
+<p>📱 واتساب: <a href="https://wa.me/9639XXXXXXXXX" rel="noopener" target="_blank">+963 9X XXX XXXX</a><br/>
+✉️ البريد: mediphera.care@gmail.com<br/>
+📍 دمشق، سوريا — توصيل لجميع المحافظات</p>
+
+</div>
