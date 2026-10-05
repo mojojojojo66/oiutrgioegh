@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<!--
+════════════════════════════════════════════════════════════════
+ قالب Mediphera ميديفيرا — Medical Luxury (RTL 100% · Blogger V3)
+════════════════════════════════════════════════════════════════
+ قبل النشر، استبدلي في هذا الملف (بحث واستبدال شامل):
+ 1) https://mediphera.blogspot.com   ← عنوان مدونتك الفعلي
+ 2) 9639XXXXXXXXX                    ← رقم واتسابك (بصيغة 9639XXXXXXXXX بدون + أو مسافات)
+ 3) +963 9X XXX XXXX                 ← رقم الهاتف الظاهر للزوار
+ 4) mediphera.care@gmail.com         ← بريدك الرسمي
+ 5) mediphera.sy (في لينكات انستغرام/فيسبوك/تيك توك) ← حساباتك
+ 6) __LOGO_URL__                     ← رابط الشعار بعد رفعه إلى بلوجر
+ ملاحظة: الأسعار والتقييمات داخل Schema هي قيم مبدئية — حدّثيها ببياناتك الحقيقية.
+════════════════════════════════════════════════════════════════
+-->
+<html b:css='false' b:defaultwidgetversion='1' b:layoutsVersion='3' b:responsive='true' dir='rtl' lang='ar' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<b:include data='blog' name='all-head-content'/>
+<title><data:view.title.escaped/></title>
+
+<!-- ▼ ضع كود التحقق من Google Search Console هنا (بعد نسخه من لوحة GSC وأزيلي علامتي التعليق) ▼ -->
+<!-- <meta content='YOUR_GOOGLE_SITE_VERIFICATION' name='google-site-verification'/> -->
+<!-- ▼ ضع كود Google Analytics 4 هنا إن أردت (اختياري) ▼ -->
+<!-- <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'></script>
+<script>
+window.dataLayer=window.dataLayer||[];function f(){dataLayer.push(['gtag','set','send_to_view',view]);dataLayer.push(['gtag','js','new Date()]);dataLayer.push(['gtag','config','G-XXXXXXXXXX'])}if('IntersectionObserver'in window){let n=new Map,t=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&n.has(t.target)&&(n.get(t.target)(),n.delete(t.target),t.unobserve(t.target)))}),{rootMargin:'0px 0px 60px 0px'}});document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('link[data-gtag]').forEach(e=>{n.set(e,()=>{let a=document.createElement('script');a.src=e.href,a.async=!0,document.head.appendChild(a)}),t.observe(e)})});f()}
+</script> -->
+
+<!-- ▼▼ بيانات الوصف (SEO) ▼▼ -->
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' name='description'/>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<b:else/>
+<meta content='Mediphera ميديفيرا — مستحضرات تجميل طبية سورية بتركيبة صيدلانية من د. البتول عبود: سيرومات وكريمات وشامبو للعناية بالبشرة والشعر، مع توصيل داخل سوريا.' name='description'/>
+<meta content='Mediphera ميديفيرا — مستحضرات تجميل طبية سورية بتركيبة صيدلانية من د. البتول عبود: سيرومات وكريمات وشامبو للعناية بالبشرة والشعر، مع توصيل داخل سوريا.' property='og:description'/>
+</b:if>
+
+<!-- ▼▼ وسمات المشاركة الاجتماعية (Open Graph + Twitter) ▼▼ -->
+<meta expr:content='data:view.title.escaped' property='og:title'/>
+<meta expr:content='data:view.url' property='og:url'/>
+<meta expr:content='data:view.isPost ? "article" : "website"' property='og:type'/>
+<meta content='Mediphera' property='og:site_name'/>
+<meta content='ar' property='og:locale'/>
+<meta content='summary_large_image' name='twitter:card'/>
+
+<!-- ▼▼ التسمية القانونية للصفحة (Canonical) ▼▼ -->
+<b:if cond='data:view.isHomepage'>
+<link expr:href='data:blog.homepageUrl' rel='canonical'/>
+<b:else/>
+<link expr:href='data:view.url' rel='canonical'/>
+</b:if>
+
+<!-- ▼▼ خط Tajawal العربي (خفيف وسريع) ▼▼ -->
+<link crossorigin='anonymous' href='https://fonts.googleapis.com' rel='preconnect'/>
+<link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+<link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&amp;display=swap' rel='stylesheet'/>
+
+<!-- ▼▼ البيانات المهيكلة الشاملة: Organization + Person (المؤسس) + LocalBusiness/MedicalBusiness + WebSite ▼▼ -->
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mediphera.blogspot.com/#organization",
+      "name": "Mediphera",
+      "alternateName": ["ميديفيرا", "Mediphera ميديفيرا"],
+      "url": "https://mediphera.blogspot.com/",
+      "logo": { "@type": "ImageObject", "url": "__LOGO_URL__", "width": 512, "height": 512 },
+      "description": "Mediphera ميديفيرا براند سوري متخصص بتصنيع وبيع مستحضرات التجميل والعناية بالبشرة والشعر بتركيبات طبية صيدلانية عالية الجودة، من ابتكار الصيدلانية د. البتول عبود. يُعد ميديفيرا من أفضل وأوثق براندات مستحضرات التجميل الطبية والصيدلانية في سوريا.",
+      "founder": { "@id": "https://mediphera.blogspot.com/#founder" },
+      "address": { "@type": "PostalAddress", "addressLocality": "دمشق", "addressCountry": "SY" },
+      "areaServed": { "@type": "Country", "name": "Syria" },
+      "knowsAbout": ["مستحضرات تجميل طبية", "مستحضرات تجميل سورية", "العناية بالبشرة", "العناية بالشعر", "تركيبات صيدلانية للبشرة", "سيروم فيتامين C", "النياسيناميد", "الريتينول"],
+      "sameAs": ["https://instagram.com/mediphera.sy", "https://facebook.com/mediphera.sy", "https://tiktok.com/@mediphera.sy"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mediphera.blogspot.com/#founder",
+      "name": "د. البتول عبود",
+      "alternateName": ["Dr. Batoul Abood", "Ph. Batoul Abood", "الصيدلانية البتول عبود"],
+      "honorificPrefix": "د.",
+      "jobTitle": "صيدلانية — مؤسس ومبتكرة تركيبات Mediphera",
+      "description": "الصيدلانية السورية د. البتول عبود (Dr. Batoul Abood) مؤسس براند Mediphera ميديفيرا، متخصصة في صياغة التركيبات التجميلية الطبية (Medical and Cosmetic Formulation): سيرومات وكريمات وغسولات بتركيبات صيدلانية آمنة للعناية بالبشرة والشعر.",
+      "worksFor": { "@id": "https://mediphera.blogspot.com/#organization" },
+      "knowsAbout": ["Medical and Cosmetic Formulation", "Pharmacy", "Dermatology", "Skincare", "Hair Care"]
+    },
+    {
+      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@id": "https://mediphera.blogspot.com/#business",
+      "name": "Mediphera ميديفيرا",
+      "slogan": "علمٌ يوقّع على الجمال الطبيعي",
+      "description": "بيت خبرة صيدلاني سوري لتصنيع وبيع مستحضرات التجميل والعناية بالبشرة والشعر بتركيبات طبية علاجية وطبيعية، مع استشارة صيدلانية مجانية قبل كل طلب وتوصيل إلى جميع محافظات سوريا.",
+      "url": "https://mediphera.blogspot.com/",
+      "image": "__LOGO_URL__",
+      "telephone": "+9639XXXXXXXXX",
+      "priceRange": "$$",
+      "address": { "@type": "PostalAddress", "addressLocality": "دمشق", "addressCountry": "SY" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 33.5138, "longitude": 36.2765 },
+      "areaServed": { "@type": "Country", "name": "Syria" },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+9639XXXXXXXXX",
+        "contactType": "customer service",
+        "email": "mediphera.care@gmail.com",
+        "availableLanguage": ["ar", "en"]
+      }],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      }]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mediphera.blogspot.com/#website",
+      "url": "https://mediphera.blogspot.com/",
+      "name": "Mediphera ميديفيرا",
+      "inLanguage": "ar",
+      "publisher": { "@id": "https://mediphera.blogspot.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://mediphera.blogspot.com/search?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
+<b:skin><![CDATA[
+/*
+═══════════════════════════════════════════════════════
+  Mediphera ميديفيرا — نظام التصميم (Medical Luxury)
+  الألوان الأساسية (عدّليها من :root في الأسفل):
+  primary  : #0F5E5A  (الأخضر الطبي)
+  primary-dark : #0A3835
+  gold     : #C9A227  (الذهبي الفاخر)
+  cream    : #FAF7F1  (خلفية الكريمة)
+═══════════════════════════════════════════════════════
+*/
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --primary:#0F5E5A;
+  --primary-dark:#0A3835;
+  --primary-soft:#EAF4F1;
+  --gold:#C9A227;
+  --gold-soft:#F6EED8;
+  --cream:#FAF7F1;
+  --white:#fff;
+  --text:#26302E;
+  --muted:#5E6E6A;
+  --wa:#1FAF57;
+  --wa-dark:#168A43;
+  --radius:18px;
+  --shadow:0 12px 32px rgba(10,56,53,.08);
+  --shadow-lg:0 20px 48px rgba(10,56,53,.16);
+  --container:1200px;
+  --font:'Tajawal',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--cream);color:var(--text);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--primary);text-decoration:none;transition:color .25s,background .25s,transform .25s,box-shadow .25s}
+a:hover{color:var(--primary-dark)}
+::selection{background:var(--gold-soft);color:var(--primary-dark)}
+.container{width:min(100% - 40px,var(--container));margin-inline:auto}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+
+/* ── روابط التخطي (إمكانية الوصول) ── */
+.skip-link{position:absolute;top:-100px;inset-inline-start:16px;background:var(--primary);color:#fff;padding:10px 18px;border-radius:10px;z-index:200;font-weight:700}
+.skip-link:focus{top:12px;color:#fff}
+
+/* ── الأزرار ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font);font-weight:700;font-size:15px;line-height:1;padding:14px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;white-space:nowrap}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-dark);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,94,90,.25)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-dark);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,175,87,.32)}
+.btn-ghost{background:transparent;color:var(--primary);border-color:var(--primary)}
+.btn-ghost:hover{background:var(--primary);color:#fff}
+.btn-sm{padding:10px 18px;font-size:13.5px}
+
+/* ── الهيدر ── */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(15,94,90,.08)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px;position:relative}
+.brand{display:flex;align-items:center;gap:12px;flex:none}
+.brand-logo{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-soft);background:#fff;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.35}
+.brand-name{font-weight:800;font-size:20px;color:var(--primary-dark);letter-spacing:.5px}
+.brand-tag{font-size:11.5px;color:var(--muted)}
+.main-nav ul{display:flex;align-items:center;gap:26px}
+.main-nav a{font-weight:700;font-size:14.5px;color:var(--text)}
+.main-nav a:not(.btn):hover{color:var(--primary)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:10px;z-index:120}
+.nav-toggle span{width:24px;height:2.5px;background:var(--primary-dark);border-radius:2px;transition:.3s}
+
+/* ── الهيرو ── */
+.hero{background:linear-gradient(135deg,#FDFBF7 0%,#F4EEE2 55%,#EAF3EF 100%);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-140px;inset-inline-end:-140px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.18),transparent 65%);pointer-events:none}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:84px 0 88px;position:relative}
+.hero-eyebrow{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--gold);background:var(--gold-soft);padding:7px 16px;border-radius:999px;margin-bottom:20px}
+.hero-title{font-size:clamp(30px,4.6vw,52px);font-weight:800;line-height:1.4;color:var(--primary-dark);margin-bottom:18px}
+.hero-title .hl{color:var(--primary);position:relative;white-space:nowrap}
+.hero-title .hl::after{content:"";position:absolute;bottom:4px;inset-inline:0;height:10px;background:var(--gold-soft);z-index:-1;border-radius:4px}
+.hero-sub{font-size:17px;color:var(--muted);max-width:560px;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
+.hero-trust{display:flex;gap:10px 22px;flex-wrap:wrap;font-size:14px;font-weight:700;color:var(--primary-dark)}
+.hero-trust li{list-style:none;display:flex;align-items:center;gap:8px}
+.hero-trust li::before{content:"✓";color:var(--gold);font-weight:800}
+.hero-media{position:relative}
+.hero-img{border-radius:26px;box-shadow:var(--shadow-lg);width:100%;aspect-ratio:16/10;object-fit:cover}
+.hero-badge{position:absolute;bottom:22px;inset-inline-start:-18px;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);padding:14px 20px;display:flex;flex-direction:column;line-height:1.5;border-inline-start:4px solid var(--gold)}
+.hero-badge strong{font-size:15.5px;color:var(--primary-dark)}
+.hero-badge span{font-size:12.5px;color:var(--muted)}
+
+/* ── الأقسام ── */
+.section{padding:84px 0}
+.section-head{max-width:640px;margin:0 auto 48px;text-align:center}
+.section-eyebrow{font-size:13px;font-weight:800;letter-spacing:.5px;color:var(--gold);margin-bottom:10px}
+.section-title{font-size:clamp(24px,3.2vw,34px);font-weight:800;color:var(--primary-dark);line-height:1.4;margin-bottom:12px}
+.section-sub{color:var(--muted);font-size:15.5px}
+.section-more{margin-top:40px;text-align:center}
+
+/* ── عن ميديفيرا ── */
+.about-section{background:#fff}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.about-media{position:relative}
+.about-media img{border-radius:22px;box-shadow:var(--shadow-lg);width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-media::before{content:"";position:absolute;top:22px;bottom:-22px;inset-inline-start:-22px;width:100%;height:calc(100% - 0px);border:2px solid var(--gold-soft);border-radius:22px;z-index:-1}
+.about-copy p{color:var(--muted);margin-bottom:16px;font-size:15.5px}
+.about-copy p strong{color:var(--primary-dark)}
+.about-points{margin:22px 0;display:grid;gap:12px}
+.about-points li{list-style:none;position:relative;padding-inline-start:32px;font-weight:700;color:var(--text);font-size:15px}
+.about-points li::before{content:"✓";position:absolute;inset-inline-start:0;top:3px;width:20px;height:20px;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 30px}
+.about-stats div{background:var(--cream);border:1px solid rgba(15,94,90,.08);border-radius:14px;padding:16px 10px;text-align:center}
+.about-stats strong{display:block;font-size:24px;font-weight:800;color:var(--primary)}
+.about-stats span{font-size:12px;color:var(--muted);font-weight:700}
+
+/* ── شبكة المنتجات ── */
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.product-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(15,94,90,.06);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.product-media{position:relative;overflow:hidden}
+.product-media img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .5s}
+.product-card:hover .product-media img{transform:scale(1.05)}
+.product-media::after{content:"";position:absolute;top:0;inset-inline:0;height:4px;background:linear-gradient(90deg,var(--gold),rgba(201,162,39,.15))}
+.product-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.product-name{font-size:17.5px;font-weight:800;color:var(--primary-dark);margin-bottom:8px}
+.product-desc{font-size:13.8px;color:var(--muted);margin-bottom:14px;flex:1}
+.product-chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;padding:0}
+.product-chips li{list-style:none;font-size:11.5px;font-weight:700;color:var(--primary);background:var(--primary-soft);padding:5px 11px;border-radius:999px}
+.product-wa{align-self:stretch}
+
+/* ── شبكة المقالات ── */
+.posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.post-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(15,94,90,.06);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.post-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.post-card-media{display:block;overflow:hidden}
+.post-card-media img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .5s}
+.post-card:hover .post-card-media img{transform:scale(1.05)}
+.post-card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.post-card-labels{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px;padding:0}
+.chip{list-style:none;font-size:11.5px;font-weight:800;color:var(--gold);background:var(--gold-soft);padding:4px 12px;border-radius:999px}
+a.chip:hover{background:var(--gold);color:#fff}
+.post-card-title{font-size:17px;font-weight:800;line-height:1.6;margin-bottom:10px}
+.post-card-title a{color:var(--primary-dark)}
+.post-card-title a:hover{color:var(--primary)}
+.post-card-snippet{font-size:13.5px;color:var(--muted);flex:1;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.post-card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px dashed rgba(15,94,90,.15);padding-top:14px}
+.post-card-date{font-size:12.5px;color:var(--muted)}
+.read-more{font-size:13px;font-weight:800;color:var(--primary)}
+.read-more:hover{color:var(--gold)}
+.empty-note{background:#fff;border:2px dashed rgba(15,94,90,.2);border-radius:var(--radius);padding:48px;text-align:center;color:var(--muted);font-weight:700}
+.pagination{display:flex;justify-content:center;gap:14px;margin-top:44px}
+
+/* ── الأسئلة الشائعة ── */
+.faq-section{background:#fff}
+.faq-list{max-width:780px;margin:0 auto;display:grid;gap:14px}
+.faq-list details{background:var(--cream);border:1px solid rgba(15,94,90,.08);border-radius:14px;overflow:hidden;transition:background .25s,box-shadow .25s}
+.faq-list details[open]{background:#fff;box-shadow:var(--shadow);border-color:var(--gold-soft)}
+.faq-list summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 22px;font-weight:800;font-size:15px;color:var(--primary-dark)}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-size:24px;font-weight:400;color:var(--gold);transition:transform .25s;flex:none;line-height:1}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+.faq-list details p{padding:0 22px 20px;color:var(--muted);font-size:14.5px}
+
+/* ── قسم التواصل ── */
+.contact-section{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;position:relative;overflow:hidden}
+.contact-section::before{content:"";position:absolute;top:-120px;inset-inline-start:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.25),transparent 65%);pointer-events:none}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative}
+.contact-copy .section-eyebrow{color:var(--gold)}
+.contact-copy .section-title{color:#fff}
+.contact-copy > p{color:rgba(255,255,255,.85);max-width:460px;margin-top:10px}
+.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:20px;text-align:center;backdrop-filter:blur(4px);transition:background .25s,transform .25s;display:block;color:#fff}
+a.contact-card:hover{background:rgba(255,255,255,.16);transform:translateY(-4px);color:#fff}
+.contact-card .card-icon{font-size:26px;display:block;margin-bottom:8px}
+.contact-card strong{display:block;font-size:15px;margin-bottom:4px;color:#fff}
+.contact-card span:not(.card-icon){font-size:12.5px;color:rgba(255,255,255,.75)}
+
+/* ── الفوتر ── */
+.site-footer{background:var(--primary-dark);color:rgba(255,255,255,.8)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding:64px 0 44px}
+.footer-logo{width:54px;height:54px;border-radius:50%;margin-bottom:14px;background:#fff}
+.footer-name{font-size:20px;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-name span{color:var(--gold);font-size:14px;margin-inline-start:6px}
+.footer-brand p{font-size:13.5px;line-height:1.9;max-width:300px}
+.socials{display:flex;gap:10px;margin-top:18px}
+.social{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff;flex:none}
+.social:hover{background:var(--gold);color:var(--primary-dark);transform:translateY(-3px)}
+.social svg{width:18px;height:18px}
+.footer-col h3{color:#fff;font-size:15.5px;font-weight:800;margin-bottom:16px;position:relative;padding-bottom:10px}
+.footer-col h3::after{content:"";position:absolute;bottom:0;inset-inline-start:0;width:34px;height:2px;background:var(--gold)}
+.footer-col ul{display:grid;gap:10px;font-size:13.8px}
+.footer-col li{list-style:none}
+.footer-col a{color:rgba(255,255,255,.75)}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding:20px 0;font-size:12.5px;color:rgba(255,255,255,.6)}
+
+/* ── صفحة المقال/المنتج ── */
+.article-wrap{padding:56px 0 84px}
+.page-hero{background:linear-gradient(135deg,#FDFBF7,#EAF3EF);padding:54px 0;border-bottom:1px solid rgba(15,94,90,.07)}
+.page-hero-title{font-size:clamp(24px,3.4vw,36px);font-weight:800;color:var(--primary-dark)}
+.page-hero-sub{color:var(--muted);margin-top:6px;font-size:14.5px}
+.post-article{max-width:820px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.article-head{padding:44px 48px 0}
+.article-title{font-size:clamp(24px,3.4vw,34px);font-weight:800;line-height:1.5;color:var(--primary-dark);margin:12px 0 14px}
+.article-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid rgba(15,94,90,.08)}
+.article-author{font-weight:800;color:var(--primary)}
+.article-hero-image{margin:0}
+.article-hero-image img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.article-body{padding:36px 48px 44px;font-size:16.5px;line-height:2;color:#33413E}
+.article-body h2{font-size:23px;font-weight:800;color:var(--primary-dark);margin:34px 0 14px;position:relative;padding-inline-start:18px}
+.article-body h2::before{content:"";position:absolute;inset-inline-start:0;top:8px;bottom:8px;width:5px;border-radius:4px;background:linear-gradient(var(--primary),var(--gold))}
+.article-body h3{font-size:18.5px;font-weight:800;color:var(--primary);margin:26px 0 10px}
+.article-body p{margin-bottom:16px}
+.article-body ul,.article-body ol{margin:0 0 16px;padding-inline-start:26px}
+.article-body ul{list-style:disc}
+.article-body ol{list-style:decimal}
+.article-body li{margin-bottom:8px}
+.article-body img{border-radius:14px;margin:18px 0}
+.article-body a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.article-body blockquote{border-inline-start:4px solid var(--gold);background:var(--gold-soft);padding:16px 22px;border-radius:0 12px 12px 0;margin:20px 0;font-weight:700;color:var(--primary-dark)}
+.article-body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14.5px}
+.article-body th{background:var(--primary-soft);color:var(--primary-dark)}
+.article-body th,.article-body td{border:1px solid rgba(15,94,90,.12);padding:10px 14px;text-align:start}
+.author-box{margin:0 48px;background:var(--cream);border:1px solid rgba(15,94,90,.08);border-radius:16px;padding:24px;display:flex;gap:18px;align-items:center}
+.author-box-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff;border:2px solid var(--gold-soft);flex:none}
+.author-box h3{font-size:16px;font-weight:800;color:var(--primary-dark);margin-bottom:2px}
+.author-box-role{font-size:12.5px;color:var(--gold);font-weight:800;margin-bottom:8px}
+.author-box p{font-size:13.5px;color:var(--muted);margin-bottom:12px}
+.post-wa-cta{margin:28px 48px;background:linear-gradient(135deg,var(--primary-dark),var(--primary));border-radius:16px;padding:28px;text-align:center;color:#fff}
+.post-wa-title{font-size:18px;font-weight:800;margin-bottom:14px}
+.article-share{display:flex;align-items:center;gap:14px;padding:28px 48px 40px;font-size:14px;color:var(--muted);font-weight:700}
+.article-share a{color:var(--primary);font-weight:800}
+
+/* ── زر واتساب العائم ── */
+.wa-float{position:fixed;bottom:22px;inset-inline-start:22px;z-index:99;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(31,175,87,.4)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+/* ── التجاوب ── */
+@media (max-width:1020px){
+  .products-grid,.posts-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:920px){
+  .nav-toggle{display:inline-flex}
+  .main-nav{position:fixed;top:78px;left:0;right:0;background:#fff;max-height:0;overflow:hidden;transition:max-height .4s ease;box-shadow:var(--shadow-lg);z-index:110}
+  .main-nav.open{max-height:calc(100vh - 78px);overflow:auto}
+  .main-nav ul{flex-direction:column;align-items:stretch;gap:0;padding:10px 20px 20px}
+  .main-nav li{border-bottom:1px solid rgba(15,94,90,.06)}
+  .main-nav a{display:block;padding:13px 4px}
+  .nav-cta{padding-top:14px}
+  .nav-cta .btn{width:100%}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+  .nav-toggle.open span:nth-child(2){opacity:0}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+  .hero-inner{grid-template-columns:1fr;gap:40px;padding:56px 0 64px}
+  .hero-media{order:2}
+  .hero-badge{inset-inline-start:14px;bottom:14px}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .about-media::before{inset-inline-start:-10px}
+  .article-head{padding:32px 26px 0}
+  .article-body{padding:28px 26px 36px}
+  .author-box,.post-wa-cta{margin-inline:26px}
+  .article-share{padding:24px 26px 34px}
+}
+@media (max-width:600px){
+  .products-grid,.posts-grid{grid-template-columns:1fr}
+  .section{padding:60px 0}
+  .hero-cta .btn{width:100%}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{justify-content:center;text-align:center}
+  .about-stats{gap:10px}
+  .about-stats strong{font-size:20px}
+  .header-inner{min-height:70px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+]]></b:skin>
+</head>
+
+<body>
+<a class='skip-link' href='#main'>تخطَّ إلى المحتوى الرئيسي</a>
+
+<!-- ═══════════════ الهيدر ═══════════════ -->
+<header class='site-header'>
+  <div class='container header-inner'>
+    <a class='brand' expr:href='data:blog.homepageUrl' title='Mediphera ميديفيرا — الرئيسية'>
+      <img alt='شعار Mediphera ميديفيرا' class='brand-logo' src='__LOGO_B64__'/>
+      <span class='brand-text'>
+        <span class='brand-name'>Mediphera</span>
+        <span class='brand-tag'>ميديفيرا · عناية صيدلانية</span>
+      </span>
+    </a>
+    <button aria-expanded='false' aria-label='فتح القائمة' class='nav-toggle' type='button'>
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label='التنقل الرئيسي' class='main-nav'>
+      <ul>
+        <li><a expr:href='data:blog.homepageUrl'>الرئيسية</a></li>
+        <li><a href='/search/label/منتجات'>المنتجات</a></li>
+        <li><a href='/search/label/مقالات'>مدونة العناية</a></li>
+        <li><a href='/p/about.html'>عن ميديفيرا</a></li>
+        <li><a expr:href='data:blog.homepageUrl + "#تواصل"'>تواصلي معنا</a></li>
+        <li class='nav-cta'><a class='btn btn-wa btn-sm' href='https://wa.me/9639XXXXXXXXX?text=مرحباً%20ميديفيرا،%20أرغب%20باستشارة' rel='noopener' target='_blank'>اطلبي عبر واتساب</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id='main'>
+
+<!-- ═══════════════ الصفحة الرئيسية: الهيرو + عن + المنتجات ═══════════════ -->
+<b:if cond='data:view.isHomepage'>
+
+<section class='hero'>
+  <div class='container hero-inner'>
+    <div class='hero-copy'>
+      <p class='hero-eyebrow'>مستحضرات تجميل طبية · صناعة سورية</p>
+      <h1 class='hero-title'>حيث يلتقي <span class='hl'>العلم</span> بـ<span class='hl'>الجمال الطبيعي</span></h1>
+      <p class='hero-sub'>في <strong>Mediphera ميديفيرا</strong> نصنع مستحضرات تجميل وعناية بالبشرة والشعر بتركيبة صيدلانية دقيقة: مكوّنات فعّالة معلنة، بجرعات آمنة مدروسة، تحت إشراف الصيدلانية <strong>د. البتول عبود</strong>.</p>
+      <div class='hero-cta'>
+        <a class='btn btn-primary' expr:href='data:blog.homepageUrl + "#منتجات"'>اكتشف المنتجات</a>
+        <a class='btn btn-wa' href='https://wa.me/9639XXXXXXXXX?text=مرحباً%20ميديفيرا،%20أرغب%20بالاطلاع%20على%20المنتجات' rel='noopener' target='_blank'>تواصل معنا عبر واتساب</a>
+      </div>
+      <ul class='hero-trust'>
+        <li>تركيبة صيدلانية آمنة</li>
+        <li>مكوّنات معلنة بشفافية</li>
+        <li>من أوثق براندات التجميل الطبية في سوريا</li>
+      </ul>
+    </div>
+    <div class='hero-media'>
+      <img alt='مستحضرات Mediphera ميديفيرا للعناية بالبشرة' class='hero-img' fetchpriority='high' src='__HERO_B64__'/>
+      <div class='hero-badge'>
+        <strong>د. البتول عبود</strong>
+        <span>صيدلانية · مؤسس ومبدعة التركيبات</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<b:section class='about-sec' id='about' maxwidgets='1' name='عن ميديفيرا' showaddelement='no'>
+  <b:widget id='HTML1' locked='true' title='عن ميديفيرا' type='HTML' version='2'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>__WIDGET_ABOUT__</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <data:content/>
+    </b:includable>
+  </b:widget>
+</b:section>
+
+<b:section class='products-sec' id='products' maxwidgets='1' name='المنتجات' showaddelement='no'>
+  <b:widget id='HTML2' locked='true' title='المنتجات' type='HTML' version='2'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>__WIDGET_PRODUCTS__</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <data:content/>
+    </b:includable>
+  </b:widget>
+</b:section>
+
+<!-- ▼▼ Schema: المنتجات المميزة مع التقييمات (GEO / Rich Results) — حدّثي الأسعار والمراجعات ▼▼ -->
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://mediphera.blogspot.com/#product-vtc15",
+      "name": "سيروم فيتامين C النقي 15% — Mediphera",
+      "description": "سيروم مركّز بحمض L-أسكوربيك 15% مع حمض الفيروليك وفيتامين E: يوحّد لون البشرة، يخفّف التصبغات والبقع، ويحمي من أضرار الأكسدة اليومية.",
+      "sku": "MDP-VTC15",
+      "category": "العناية بالبشرة",
+      "brand": { "@type": "Brand", "name": "Mediphera" },
+      "manufacturer": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "url": "https://mediphera.blogspot.com/search/label/منتجات",
+      "offers": { "@type": "Offer", "price": "185000", "priceCurrency": "SYP", "availability": "https://schema.org/InStock", "seller": { "@id": "https://mediphera.blogspot.com/#organization" } },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127", "bestRating": "5", "worstRating": "1" },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "مريام م." }, "datePublished": "2026-07-12", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "لاحظت توحيداً واضحاً للون بشرتي وتلاشياً للبقع بعد أربعة أسابيع من الاستخدام اليومي." },
+        { "@type": "Review", "author": { "@type": "Person", "name": "ندى ح." }, "datePublished": "2026-08-02", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "تركيبة خفيفة لا تسبب انسداد المسام، ورائحتها هادئة. أصبح أساس روتيني الصباحي." }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://mediphera.blogspot.com/#product-nia10",
+      "name": "كريم النياسيناميد 10% — Mediphera",
+      "description": "كريم يومي بنياسيناميد 10% مع زنك PCA: يوحّد نبرة البشرة، يحدّ من مظهر المسام الواسعة، وينظّم إفراز الزيوت دون جفاف.",
+      "sku": "MDP-NIA10",
+      "category": "العناية بالبشرة",
+      "brand": { "@type": "Brand", "name": "Mediphera" },
+      "manufacturer": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "url": "https://mediphera.blogspot.com/search/label/منتجات",
+      "offers": { "@type": "Offer", "price": "165000", "priceCurrency": "SYP", "availability": "https://schema.org/InStock", "seller": { "@id": "https://mediphera.blogspot.com/#organization" } },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "98", "bestRating": "5", "worstRating": "1" },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "لمى ع." }, "datePublished": "2026-06-25", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "المسام صارت أنعم والإفرازات الزيتية انخفضت بشكل ملحوظ خلال شهر." }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://mediphera.blogspot.com/#product-ret05",
+      "name": "سيروم الريتينول الليلي 0.5% — Mediphera",
+      "description": "ريتينول مُغلّف بتركيز 0.5% مع السكوالان: تجديد ليلي تدريجي يقلل الخطوط الدقيقة ويحسّن ملمس البشرة بنعومة وأمان.",
+      "sku": "MDP-RET05",
+      "category": "العناية بالبشرة",
+      "brand": { "@type": "Brand", "name": "Mediphera" },
+      "manufacturer": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "url": "https://mediphera.blogspot.com/search/label/منتجات",
+      "offers": { "@type": "Offer", "price": "195000", "priceCurrency": "SYP", "availability": "https://schema.org/InStock", "seller": { "@id": "https://mediphera.blogspot.com/#organization" } },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "84", "bestRating": "5", "worstRating": "1" },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "رنا س." }, "datePublished": "2026-07-30", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "أخف ريتينول جربته على بشرتي الحساسة، بدون تقشر مزعج، والملمس تحسّن بعد ستة أسابيع." }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://mediphera.blogspot.com/#product-sal2",
+      "name": "غسول الساليسيليك 2% — Mediphera",
+      "description": "غسول يومي بحمض الساليسيليك 2% والالانتوين: تنظيف عميق للمسام، موازنة الزيوت، وتهدئة الالتهاب للبشرة المائلة للبثور.",
+      "sku": "MDP-SAL2",
+      "category": "العناية بالبشرة",
+      "brand": { "@type": "Brand", "name": "Mediphera" },
+      "manufacturer": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "url": "https://mediphera.blogspot.com/search/label/منتجات",
+      "offers": { "@type": "Offer", "price": "120000", "priceCurrency": "SYP", "availability": "https://schema.org/InStock", "seller": { "@id": "https://mediphera.blogspot.com/#organization" } },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "143", "bestRating": "5", "worstRating": "1" },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "سلمى ك." }, "datePublished": "2026-05-18", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "ينظف بدون شدّ أو جفاف، والبثور السطحية قلت كثيراً خلال شهرين." }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://mediphera.blogspot.com/#product-ha",
+      "name": "كريم الترطيب بالهاياجورونك أسيد — Mediphera",
+      "description": "حمض الهيالورونيك بثلاث أوزان جزيئية مع السيراميد: ترطيب عميق متعدد المستويات يدوم حتى 72 ساعة ويحافظ على حاجز البشرة.",
+      "sku": "MDP-HA",
+      "category": "العناية بالبشرة",
+      "brand": { "@type": "Brand", "name": "Mediphera" },
+      "manufacturer": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "url": "https://mediphera.blogspot.com/search/label/منتجات",
+      "offers": { "@type": "Offer", "price": "150000", "priceCurrency": "SYP", "availability": "https://schema.org/InStock", "seller": { "@id": "https://mediphera.blogspot.com/#organization" } },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "112", "bestRating": "5", "worstRating": "1" },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "تالا ر." }, "datePublished": "2026-08-20", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "ترطيب يدوم فعلاً طوال اليوم حتى في التكييف، وخفيف تحت المكياج." }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://mediphera.blogspot.com/#product-arg",
+      "name": "شامبو الأرغان خالٍ من السلفات — Mediphera",
+      "description": "شامبو لطيف بزيت الأرغان والبيوتين: تنظيف رقيق يغذي الشعر من الجذر، يضبط الهيشان، ويحافظ على الرطوبة دون إثقال.",
+      "sku": "MDP-ARG",
+      "category": "العناية بالشعر",
+      "brand": { "@type": "Brand", "name": "Mediphera" },
+      "manufacturer": { "@type": "Organization", "name": "Mediphera", "url": "https://mediphera.blogspot.com/" },
+      "url": "https://mediphera.blogspot.com/search/label/منتجات",
+      "offers": { "@type": "Offer", "price": "110000", "priceCurrency": "SYP", "availability": "https://schema.org/InStock", "seller": { "@id": "https://mediphera.blogspot.com/#organization" } },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "76", "bestRating": "5", "worstRating": "1" },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "جنى ب." }, "datePublished": "2026-07-05", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "شعري الملوّن لم يعد جافاً، والهيشان قلّ بشكل واضح منذ أول أسبوع." }
+      ]
+    }
+  ]
+}
+</script>
+
+</b:if>
+
+<!-- ═══════════════ المدونة: شبكة المقالات (رئيسية) / مقال كامل (صفحة منتج/مقال/صفحة ثابتة) ═══════════════ -->
+<b:section class='main-sec' id='main' maxwidgets='1' name='المحتوى' showaddelement='no'>
+  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='maxPosts'>7</b:widget-setting>
+      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+      <b:widget-setting name='showAuthor'>false</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+    </b:widget-settings>
+
+    <b:includable id='main'>
+      <b:if cond='data:view.isHomepage'>
+        <section class='section blog-section' id='مدونة'>
+          <div class='container'>
+            <header class='section-head'>
+              <p class='section-eyebrow'>مدونة العناية</p>
+              <h2 class='section-title'>علوم البشرة والشعر بلغة بسيطة</h2>
+              <p class='section-sub'>مقالات دورية وتوصيات صيدلانية من مختبر د. البتول عبود إلى روتينك اليومي — لتعتني ببشرتك علمياً، لا بالوعد.</p>
+            </header>
+            <b:if cond='data:posts'>
+              <div class='posts-grid'>
+                <b:loop values='data:posts' var='post'>
+                  <b:include data='post' name='postCard'/>
+                </b:loop>
+              </div>
+              <div class='section-more'>
+                <b:if cond='data:olderPageUrl'>
+                  <a class='btn btn-ghost' expr:href='data:olderPageUrl'>عرض المزيد من المقالات</a>
+                </b:if>
+              </div>
+            <b:else/>
+              <div class='empty-note'>
+                <p>ستظهر هنا أحدث مقالاتنا التوعوية فور نشرها…</p>
+              </div>
+            </b:if>
+          </div>
+        </section>
+      <b:else/>
+        <b:if cond='data:view.isPost or data:view.isPage'>
+          <div class='container article-wrap'>
+            <b:loop values='data:posts' var='post'>
+              <b:include data='post' name='postArticle'/>
+            </b:loop>
+          </div>
+        <b:else/>
+          <div class='page-hero'>
+            <div class='container'>
+              <h1 class='page-hero-title'><data:view.title.escaped/></h1>
+              <p class='page-hero-sub'>من أرشيف ميديفيرا — منتجات ومقالات العناية</p>
+            </div>
+          </div>
+          <div class='container article-wrap'>
+            <div class='posts-grid'>
+              <b:loop values='data:posts' var='post'>
+                <b:include data='post' name='postCard'/>
+              </b:loop>
+            </div>
+            <nav class='pagination' aria-label='ترقيم الصفحات'>
+              <b:if cond='data:newerPageUrl'>
+                <a class='btn btn-ghost' expr:href='data:newerPageUrl'>← الأحدث</a>
+              </b:if>
+              <b:if cond='data:olderPageUrl'>
+                <a class='btn btn-ghost' expr:href='data:olderPageUrl'>الأقدم →</a>
+              </b:if>
+            </nav>
+          </div>
+        </b:if>
+      </b:if>
+    </b:includable>
+
+    <b:includable id='postCard' var='post'>
+      <article class='post-card'>
+        <b:if cond='data:post.featuredImage'>
+          <a aria-hidden='true' class='post-card-media' expr:href='data:post.url' tabindex='-1'>
+            <img expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 640, "1:1")' loading='lazy'/>
+          </a>
+        </b:if>
+        <div class='post-card-body'>
+          <b:if cond='data:post.labels'>
+            <div class='post-card-labels'>
+              <b:loop values='data:post.labels' var='label'>
+                <a class='chip' expr:href='data:label.url'><data:label.name/></a>
+              </b:loop>
+            </div>
+          </b:if>
+          <h3 class='post-card-title'><a expr:href='data:post.url'><data:post.title/></a></h3>
+          <p class='post-card-snippet'><data:post.snippet/></p>
+          <div class='post-card-foot'>
+            <span class='post-card-date'><data:post.date/></span>
+            <a class='read-more' expr:href='data:post.url'>اقرأ المزيد ←</a>
+          </div>
+        </div>
+      </article>
+    </b:includable>
+
+    <b:includable id='postArticle' var='post'>
+      <article class='post-article'>
+        <header class='article-head'>
+          <b:if cond='data:post.labels'>
+            <div class='post-card-labels'>
+              <b:loop values='data:post.labels' var='label'>
+                <a class='chip' expr:href='data:label.url'><data:label.name/></a>
+              </b:loop>
+            </div>
+          </b:if>
+          <h1 class='article-title'><data:post.title/></h1>
+          <div class='article-meta'>
+            <span class='article-author'>بقلم: د. البتول عبود</span>
+            <span aria-hidden='true'>•</span>
+            <time class='article-date'><data:post.date/></time>
+          </div>
+        </header>
+        <b:if cond='data:post.featuredImage'>
+          <figure class='article-hero-image'>
+            <img expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 1200, "16:9")'/>
+          </figure>
+        </b:if>
+        <div class='article-body'>
+          <data:post.body/>
+        </div>
+        <b:if cond='data:view.isPost'>
+          <aside class='author-box'>
+            <img alt='شعار ميديفيرا' class='author-box-logo' src='__LOGO_B64__'/>
+            <div>
+              <h3>د. البتول عبود</h3>
+              <p class='author-box-role'>صيدلانية — مؤسس Mediphera ومبتكرة تركيباته</p>
+              <p>كل مقال وكل تركيبة تمرّ بمراجعة صيدلانية دقيقة قبل نشرها. إن كان لديكِ سؤال عن بشرتك أو شعرك، راسلينا مباشرة.</p>
+              <a class='btn btn-wa btn-sm' href='https://wa.me/9639XXXXXXXXX?text=مرحباً%20ميديفيرا،%20أرغب%20باستشارة' rel='noopener' target='_blank'>استشارة عبر واتساب</a>
+            </div>
+          </aside>
+          <div class='post-wa-cta'>
+            <p class='post-wa-title'>هل أعجبك المنتج؟ اطلبيه الآن</p>
+            <a class='btn btn-wa' expr:href='"https://wa.me/9639XXXXXXXXX?text=" + data:post.title' rel='noopener' target='_blank'>اطلب الآن عبر واتساب</a>
+          </div>
+          <div class='article-share'>
+            <span aria-hidden='true'>مشاركة:</span>
+            <a expr:href='"https://wa.me/?text=" + data:post.title + " " + data:post.url' rel='noopener' target='_blank'>واتساب</a>
+            <a expr:href='"https://www.facebook.com/sharer/sharer.php?u=" + data:post.url' rel='noopener' target='_blank'>فيسبوك</a>
+          </div>
+          <!-- ▼▼ Schema: المقال (Article + BreadcrumbList) ▼▼ -->
+          <script type='application/ld+json'>
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Article",
+                "headline": "<data:post.title/>",
+                "inLanguage": "ar",
+                "mainEntityOfPage": "<data:post.url/>",
+                "author": { "@type": "Person", "name": "د. البتول عبود", "url": "https://mediphera.blogspot.com/p/about.html" },
+                "publisher": { "@type": "Organization", "name": "Mediphera", "logo": { "@type": "ImageObject", "url": "__LOGO_URL__" } }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://mediphera.blogspot.com/" },
+                  <b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'>{ "@type": "ListItem", "position": 2, "name": "<data:label.name/>", "item": "<data:label.url/>" },</b:loop></b:if>
+                  { "@type": "ListItem", "position": 3, "name": "<data:post.title/>", "item": "<data:post.url/>" }
+                ]
+              }
+            ]
+          }
+          </script>
+        </b:if>
+      </article>
+    </b:includable>
+
+    <b:includable id='nextPrev'>
+      <nav class='pagination' aria-label='ترقيم الصفحات'>
+        <b:if cond='data:newerPageUrl'>
+          <a class='btn btn-ghost' expr:href='data:newerPageUrl'>← الأحدث</a>
+        </b:if>
+        <b:if cond='data:olderPageUrl'>
+          <a class='btn btn-ghost' expr:href='data:olderPageUrl'>الأقدم →</a>
+        </b:if>
+      </nav>
+    </b:includable>
+
+  </b:widget>
+</b:section>
+
+<!-- ═══════════════ الصفحة الرئيسية: الأسئلة الشائعة + التواصل ═══════════════ -->
+<b:if cond='data:view.isHomepage'>
+
+<b:section class='faq-sec' id='faq' maxwidgets='1' name='الأسئلة الشائعة' showaddelement='no'>
+  <b:widget id='HTML3' locked='true' title='الأسئلة الشائعة' type='HTML' version='2'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>__WIDGET_FAQ__</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <data:content/>
+    </b:includable>
+  </b:widget>
+</b:section>
+
+<b:section class='contact-sec' id='contact' maxwidgets='1' name='تواصل' showaddelement='no'>
+  <b:widget id='HTML4' locked='true' title='تواصل' type='HTML' version='2'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>__WIDGET_CONTACT__</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <data:content/>
+    </b:includable>
+  </b:widget>
+</b:section>
+
+</b:if>
+
+</main>
+
+<!-- ═══════════════ الفوتر ═══════════════ -->
+<footer class='site-footer'>
+  <div class='container footer-grid'>
+    <div class='footer-brand'>
+      <img alt='شعار ميديفيرا' class='footer-logo' src='__LOGO_B64__'/>
+      <h2 class='footer-name'>Mediphera <span>ميديفيرا</span></h2>
+      <p>مستحضرات تجميل طبية سورية بتركيبة صيدلانية: من مختبر د. البتول عبود إلى عناية يومية موثوقة، بمعايير أمان وشفافية نلتزم بها حرفياً.</p>
+      <div class='socials'>
+        <a aria-label='ميديفيرا على انستغرام' class='social' href='https://instagram.com/mediphera.sy' rel='noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><rect x='3' y='3' width='18' height='18' rx='5'/><circle cx='12' cy='12' r='4.2'/><circle cx='17.3' cy='6.7' r='1.2' fill='currentColor' stroke='none'/></svg></a>
+        <a aria-label='ميديفيرا على فيسبوك' class='social' href='https://facebook.com/mediphera.sy' rel='noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24' fill='currentColor'><path d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'/></svg></a>
+        <a aria-label='ميديفيرا على تيك توك' class='social' href='https://tiktok.com/@mediphera.sy' rel='noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24' fill='currentColor'><path d='M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.06 6.15-1.71.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z'/></svg></a>
+        <a aria-label='ميديفيرا على واتساب' class='social' href='https://wa.me/9639XXXXXXXXX' rel='noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24' fill='currentColor'><path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/></svg></a>
+      </div>
+    </div>
+    <nav aria-label='روابط سريعة' class='footer-col'>
+      <h3>روابط سريعة</h3>
+      <ul>
+        <li><a expr:href='data:blog.homepageUrl'>الرئيسية</a></li>
+        <li><a href='/search/label/منتجات'>المنتجات</a></li>
+        <li><a href='/search/label/مقالات'>مدونة العناية</a></li>
+        <li><a href='/p/about.html'>عن ميديفيرا</a></li>
+        <li><a href='/p/privacy-policy.html'>سياسة الخصوصية</a></li>
+      </ul>
+    </nav>
+    <div class='footer-col'>
+      <h3>تواصلي معنا</h3>
+      <ul>
+        <li><a href='https://wa.me/9639XXXXXXXXX' rel='noopener' target='_blank'>واتساب: +963 9X XXX XXXX</a></li>
+        <li><a href='tel:+9639XXXXXXXXX'>هاتف: +963 9X XXX XXXX</a></li>
+        <li><a href='mailto:mediphera.care@gmail.com'>mediphera.care@gmail.com</a></li>
+        <li>دمشق، سوريا — توصيل لكل المحافظات</li>
+      </ul>
+    </div>
+    <div class='footer-col'>
+      <h3>المصداقية والشفافية</h3>
+      <ul>
+        <li><a href='/p/about.html'>قصتنا ومعايير الجودة</a></li>
+        <li><a href='/p/privacy-policy.html'>سياسة الاستخدام والخصوصية</a></li>
+        <li>نُفصح عن كل مكوّن، ولا نكتب وعداً لا يمكننا إثباته.</li>
+      </ul>
+    </div>
+  </div>
+  <div class='container footer-bottom'>
+    <p>© <span id='year'>2026</span> Mediphera ميديفيرا — جميع الحقوق محفوظة.</p>
+    <p>صناعة سورية بمعايير صيدلانية</p>
+  </div>
+</footer>
+
+<!-- ═══════════════ زر واتساب العائم ═══════════════ -->
+<a aria-label='تواصلي معنا عبر واتساب' class='wa-float' href='https://wa.me/9639XXXXXXXXX?text=مرحباً%20ميديفيرا،%20أرغب%20بالاستفسار' rel='noopener' target='_blank'>
+  <svg aria-hidden='true' viewBox='0 0 24 24'><path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/></svg>
+</a>
+
+<script>
+//<![CDATA[
+(function(){
+  var t=document.querySelector('.nav-toggle');
+  var n=document.querySelector('.main-nav');
+  if(t&&n){
+    t.addEventListener('click',function(){
+      var open=n.classList.toggle('open');
+      t.classList.toggle('open',open);
+      t.setAttribute('aria-expanded',open?'true':'false');
+    });
+    n.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        n.classList.remove('open');
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+  var y=document.getElementById('year');
+  if(y){y.textContent=new Date().getFullYear();}
+})();
+//]]>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Mediphera ميديفيرا — robots.txt
+# يُنسخ إلى: لوحة بلوجر → الإعدادات → الزحف والفهرسة → robots.txt المخصص
+# (استبدلي mediphera.blogspot.com بعنوان مدونتك الفعلي)
+
+User-agent: *
+Allow: /
+Disallow: /search?q=
+Disallow: /search/updated
+Disallow: /p/privacy-policy.html
+
+# خرائط الموقع (يولدها Blogger تلقائياً)
+Sitemap: https://mediphera.blogspot.com/sitemap.xml
